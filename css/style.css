@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Arial;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  font-size: 22px;
+}
+nav a {
+  color: rgb(255, 255, 255);
+}
+.navbar-brand {
+  margin-right: 15%;
+}
+.container.content {
+  width: 60%;
+}
+.box {
+  background: url(../img/index-img.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+  height: 100vh;
+}
+.box-container {
+  text-align: center;
+  font-size: 58px;
+  color: rgb(255, 255, 255);
+  margin-top: 13%;
+  }
+.main-hi {
+  opacity: 80%;
+}
+.main-hi span{
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #f66d52; /* Цвет ссылки при наведении на нее курсора мыши */  
+  text-decoration: underline; /* Добавляем подчеркивание */
+}
+.result {
+  margin-bottom: 30px;
+}
+.info-box {
+  text-align: center;
+  margin-top: 250px;
+  font-size: 20px;
+  padding: 10px;
+}
+.info-row {
+  margin-bottom: 30px;
+  height: 100%;
+  background: #6495ED;
+  color: white;
+  padding: 10px;
+}
+.info-row span {
+  font-size: 32px;
+}
+.page {
+  background: url(../img/tests.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+  height: 100%;
+}
+.card {
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.page-development {
+  background: url(../img/tests.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+  height: 100vh;
+}
+
+.po {
+  color: rgb(32, 32, 31);
+}
+.page-test {
+  background: url(../img/tests.png);
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
+  height: 100vh;
+}
+
+
+.serviceBox{
+  background: rgb(255, 255, 255);
+ border: 1px solid #4e4e4e;
+ text-align: center;
+ padding: 40px 0;
+ overflow: hidden;
+ position: relative;
+ z-index: 1;
+ transition: all 0.5s ease 0s;
+}
+.serviceBox:before,
+.serviceBox:after{
+ content: "";
+ width: 200%;
+ height: 200%;
+ background: #6495ED;
+ position: absolute;
+ top: 160px;
+ left: 0;
+ z-index: -1;
+ transform: rotate(-18deg);
+ transition: all 0.5s ease 0s;
+}
+.serviceBox:before{
+ background: #4e4e4e;
+ left: -120%;
+ transform: rotate(24deg);
+}
+.serviceBox:hover:before{
+ transform: rotate(16deg);
+}
+.serviceBox:hover:after{
+ background: #684f8e;
+ transform: rotate(-10deg);
+}
+.serviceBox .service-icon{
+ font-size: 60px;
+ color: #684f8e;
+ line-height: 100px;
+ margin-bottom: 100px;
+}
+.serviceBox .service-content{
+ color: #fff;
+ line-height: 25px;
+ padding: 0 20px 20px;
+}
+
+.serviceBox .title{
+ font-size: 22px;
+ font-weight: 700;
+ margin-bottom: 10px;
+}
+.serviceBox .description{
+ font-size: 14px;
+}
+.serviceBox .read{
+ display: block;
+ width: 100%;
+ background: #fff;
+ font-size: 15px;
+ font-weight: 600;
+ color: #6495ED;
+ padding: 10px;
+ border-left: 1px solid #eba133;
+ border-right: 1px solid #eba133;
+}
+.serviceBox:hover .read{
+ border-color: #684f8e;
+ color: #684f8e;
+}
+@media only screen and (max-width: 990px){
+ .serviceBox{ margin-bottom: 30px; }
+}
+@media only screen and (max-width: 767px){
+ .serviceBox:before,
+ .serviceBox:after{
+ top: 80px;
+ }
+}
+@media only screen and (max-width: 480px){
+ .serviceBox:before,
+ .serviceBox:after{
+ top: 140px;
+ }
+}
